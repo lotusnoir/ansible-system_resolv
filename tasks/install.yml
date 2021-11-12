@@ -1,0 +1,6 @@
+---
+- name: "Configure resolv.conf"
+  template:
+    src: "resolv.conf.j2"
+    dest: "{{ resolv_file }}"
+    mode: "0644"

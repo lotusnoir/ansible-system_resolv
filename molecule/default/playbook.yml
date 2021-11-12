@@ -1,0 +1,11 @@
+---
+- name: Run role
+  hosts: all
+  become: true
+  any_errors_fatal: true
+
+  roles:
+    - role: ansible-system_resolv
+
+  vars:
+    resolv_file: /etc/resolv2.conf #can't update on docker

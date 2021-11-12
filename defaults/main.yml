@@ -1,0 +1,14 @@
+---
+resolv_file: "/etc/resolv.conf"
+resolv_nameservers:
+  - "127.0.0.1"
+  - "10.0.0.1"
+  - "10.0.0.2"
+resolv_domain: "example.com"
+resolv_search:
+  - "example.com"
+resolv_sortlist: []
+resolv_options:
+  - "timeout:2"
+  - "attempts:1"
+  - "rotate"
