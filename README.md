@@ -19,7 +19,7 @@ none
 
 See [variables](/defaults/main.yml) for more details.
 
-With default variables, this role assume it doesnt change anything on the system. You need to set the config variables like in the exemple in order to configure the resolv file.
+With default variables, this role assume it doesnt change anything on the system. You need to set the config variables like in the exemple in order to start configuration.
 
 ## Examples
 
