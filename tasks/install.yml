@@ -4,3 +4,6 @@
     src: "resolv.conf.j2"
     dest: "{{ resolv_file }}"
     mode: "0644"
+  when:
+    - resolv_nameservers is defined
+    - resolv_nameservers | length > 0

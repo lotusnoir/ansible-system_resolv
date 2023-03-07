@@ -19,6 +19,8 @@ none
 
 See [variables](/defaults/main.yml) for more details.
 
+With default variables, this role assume it doesnt change anything on the system. You need to set the config variables like in the exemple in order to configure the resolv file.
+
 ## Examples
 
         ---
@@ -28,6 +30,19 @@ See [variables](/defaults/main.yml) for more details.
           gather_facts: true
           roles:
             - role: ansible-system_resolv
+          vars:
+            resolv_nameservers:
+              - "127.0.0.1"
+              - "10.0.0.1"
+              - "10.0.0.2"
+            resolv_domain: "example.com"
+            resolv_search:
+              - "example.com"
+            resolv_options:
+              - "timeout:2"
+              - "attempts:1"
+              - "rotate"
+
 
 
 ## License
