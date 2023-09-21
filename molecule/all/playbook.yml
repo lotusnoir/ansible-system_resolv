@@ -4,12 +4,12 @@
   become: true
   any_errors_fatal: true
 
-  tasks:
-    - name: Include role
-      ansible.builtin.include_role:
-        name: ansible-system_resolv
-
   vars:
     resolv_file: /etc/resolv2.conf #can't update on docker
     resolv_nameservers:
       - "127.0.0.1"
+
+  tasks:
+    - name: Include role
+      ansible.builtin.include_role:
+        name: ansible-system_resolv
