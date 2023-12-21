@@ -1,4 +1,5 @@
 ---
+resolv_resolvconf_remove: false
 resolv_file: "/etc/resolv.conf"
 #resolv_nameservers:
 #  - "127.0.0.1"

@@ -43,6 +43,7 @@ With default variables, this role dont change anything on the system. You need t
           roles:
             - role: ansible-system_resolv
           vars:
+            resolv_resolvconf_remove: true
             resolv_nameservers:
               - "127.0.0.1"
               - "10.0.0.1"

@@ -1,4 +1,14 @@
 ---
+- name: "Ensure resolvconf package is absent"
+  ansible.builtin.package:
+    name: resolvconf
+    state: absent
+  register: pkg_result
+  retries: 12
+  delay: 10
+  until: pkg_result is success
+  when: resolv_resolvconf_remove|bool
+
 - name: "Configure resolv.conf"
   ansible.builtin.template:
     src: "resolv.conf.j2"
