@@ -6,7 +6,7 @@
 
   vars:
     resolv_resolvconf_remove: true
-    resolv_file: /etc/resolv2.conf #can't update on docker
+    resolv_file: /etc/resolv2.conf
     resolv_nameservers:
       - "127.0.0.1"
 

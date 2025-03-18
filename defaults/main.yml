@@ -1,8 +1,8 @@
 ---
 ### Install
-#remove resolvconf package
+# remove resolvconf package
 resolv_resolvconf_remove: false
-#remove dns support by network manager
+# remove dns support by network manager
 resolv_networkmanager_disable_dns: false
 resolv_file: "/etc/resolv.conf"
 
