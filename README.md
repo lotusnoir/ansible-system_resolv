@@ -22,6 +22,7 @@
 ## Description
 
 Configure resolv.conf
+
 ## Requirements
 
 none
@@ -55,7 +56,6 @@ With default variables, this role dont change anything on the system. You need t
               - "timeout:2"
               - "attempts:1"
               - "rotate"
-
 
 
 ## License

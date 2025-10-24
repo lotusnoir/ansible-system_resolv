@@ -3,10 +3,10 @@
   ansible.builtin.package:
     name: resolvconf
     state: absent
-  register: pkg_result
+  register: __pkg_result
   retries: 12
   delay: 10
-  until: pkg_result is success
+  until: __pkg_result is success
   when: resolv_resolvconf_remove | bool
 
 - name: "Check if /etc/NetworkManager/"
